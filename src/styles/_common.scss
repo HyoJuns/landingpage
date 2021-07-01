@@ -1,0 +1,55 @@
+@use './colorlist' as c;
+// 카페서라운드 24
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after
+{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+
+    
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-family: 'Cafe24Ssurround';
+
+    width: 100%;
+    height: 100%;
+
+    // overflow: hidden;
+}
+
+li
+{
+    list-style-type: none;
+}
+a
+{
+    color : c.getColor('black');
+    text-decoration : none;
+}
+
+
+// 색상 반복
+@each $index, $value in c.$colorlist
+{
+    .bg-#{$index}
+    {
+        background-color: #{$value};
+    }
+}
+

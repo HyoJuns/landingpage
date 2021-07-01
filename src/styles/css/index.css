@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Cafe24Ssurround";
+  width: 100%;
+  height: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+.bg-strawberry {
+  background-color: #DC2C34;
+}
+
+.bg-sandybrown {
+  background-color: #F58C67;
+}
+
+.bg-apache {
+  background-color: #DBB265;
+}
+
+.bg-starship {
+  background-color: #F2E741;
+}
+
+.bg-pastelgreen {
+  background-color: #96E87D;
+}
+
+.bg-black {
+  background-color: #222;
+}
+
+.warpper {
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  width: 100%;
+  height: 15rem;
+  position: relative;
+  z-index: 100;
+  padding: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo > img {
+  width: 10rem;
+  height: 10rem;
+}
+
+#gnb > ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#gnb > ul > li {
+  padding-left: 8rem;
+}
+#gnb > ul > li > a {
+  font-size: 2.5rem;
+  transition: color 0.4s;
+}
+#gnb > ul > li > a:hover {
+  color: #F58C67;
+}
+
+#main {
+  width: 100%;
+  height: calc(100vh - 150px);
+  position: relative;
+}
+#section-1 {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  clear: both;
+}
+#section-1 .leftbox {
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+#section-1 .leftbox > img {
+  position: absolute;
+  top: 10rem;
+  transform: rotateX(30deg);
+}
+#section-1 .rightbox {
+  width: 50%;
+  height: 100%;
+  float: right;
+  position: relative;
+  text-align: left;
+  padding: 20rem;
+}
+
+#section-2 {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  clear: both;
+}
+#section-2 .leftbox {
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+#section-2 .leftbox > img {
+  position: absolute;
+  top: 10rem;
+  transform: rotateX(30deg);
+}
+#section-2 .rightbox {
+  width: 50%;
+  height: 100%;
+  float: right;
+  position: relative;
+  text-align: left;
+  padding: 20rem;
+}
+
+#section-3 {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  clear: both;
+}
+#section-3 .leftbox {
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+#section-3 .leftbox > img {
+  position: absolute;
+  top: 10rem;
+  transform: rotateX(30deg);
+}
+#section-3 .rightbox {
+  width: 50%;
+  height: 100%;
+  float: right;
+  position: relative;
+  text-align: left;
+  padding: 20rem;
+}
+
+#fnb {
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#fnb > ul {
+  display: flex;
+  width: 60rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#fnb > ul img {
+  transition: all 0.3s;
+}
+#fnb > ul img:hover {
+  transform: scale(1.3);
+}
+
+.active-screen {
+  z-index: 10;
+}
+
+.title {
+  font-size: 8rem;
+  text-shadow: 1px 1px 1px #222, -1px -1px 1px #fff, 1px -1px 1px #222;
+  letter-spacing: 1rem;
+}
+
+.description {
+  padding-top: 4rem;
+  font-size: 2.8rem;
+  letter-spacing: 1.2px;
+  line-height: 1.3;
+  text-shadow: 1px 1px 1px lightgray, -1px -1px 1px #222;
+}
+
+.activebutton {
+  font-size: 3.5rem;
+  padding: 4rem 0;
+  text-shadow: 1px 1px 1px #fff, -1px -1px 1px #222;
+}

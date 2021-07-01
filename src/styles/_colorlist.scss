@@ -1,0 +1,24 @@
+$colorlist : (
+    'strawberry' : #DC2C34,
+    'sandybrown' : #F58C67,
+    'apache' : #DBB265,
+    'starship' : #F2E741,
+    'pastelgreen' : #96E87D,
+    'black' : #222
+);
+
+// 색상 추출
+@function getColor($name)
+{
+    $output : map-get($colorlist, $name);
+
+    @if #{$output} != null
+    {
+        @debug #{$output};
+        @return #{$output};
+    }
+    @else
+    {
+        @return #222;
+    }
+}

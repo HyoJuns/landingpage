@@ -96,6 +96,8 @@ a {
 }
 #gnb > ul > li > a:hover {
   color: #F58C67;
+  -webkit-animation: hues 4s ease-in infinite;
+          animation: hues 4s ease-in infinite;
 }
 
 #main {
@@ -123,7 +125,8 @@ a {
 }
 #section-1 .leftbox > img {
   position: absolute;
-  top: 10rem;
+  top: 5rem;
+  left: 30rem;
 }
 #section-1 .rightbox {
   width: 50%;
@@ -131,7 +134,7 @@ a {
   float: right;
   position: relative;
   text-align: left;
-  padding: 20rem;
+  padding: 10rem;
   transform: translateX(100%);
 }
 
@@ -155,7 +158,8 @@ a {
 }
 #section-2 .leftbox > img {
   position: absolute;
-  top: 10rem;
+  top: 5rem;
+  left: 30rem;
 }
 #section-2 .rightbox {
   width: 50%;
@@ -163,7 +167,7 @@ a {
   float: right;
   position: relative;
   text-align: left;
-  padding: 20rem;
+  padding: 10rem;
   transform: translateX(100%);
 }
 
@@ -187,7 +191,8 @@ a {
 }
 #section-3 .leftbox > img {
   position: absolute;
-  top: 10rem;
+  top: 5rem;
+  left: 30rem;
 }
 #section-3 .rightbox {
   width: 50%;
@@ -195,7 +200,7 @@ a {
   float: right;
   position: relative;
   text-align: left;
-  padding: 20rem;
+  padding: 10rem;
   transform: translateX(100%);
 }
 
@@ -258,5 +263,21 @@ a {
   }
   100% {
     opacity: 1;
+  }
+}
+@-webkit-keyframes hues {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+@keyframes hues {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
   }
 }

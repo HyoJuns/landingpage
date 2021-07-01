@@ -63,6 +63,7 @@ $sectionCount : 3;
                     &:hover
                     {
                         color : c.getColor('sandybrown');
+                        animation: hues 4s ease-in infinite;
                     }
                 }
             }
@@ -106,8 +107,8 @@ $sectionCount : 3;
                 {
                     position: absolute;
 
-                    top :10rem;
-                    
+                    top :5rem;
+                    left : 30rem;
                 }
 
             }
@@ -122,7 +123,7 @@ $sectionCount : 3;
                 position: relative;
                 text-align: left;
 
-                padding : 20rem;
+                padding : 10rem;
 
                 transform: translateX(100%);
 
@@ -213,5 +214,17 @@ $sectionCount : 3;
     100%
     {
         opacity: 1;
+    }
+}
+
+@keyframes hues
+{
+    0%
+    {
+        filter : hue-rotate(0deg)
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
     }
 }
